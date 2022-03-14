@@ -9,7 +9,7 @@ from torch.autograd import Variable
 from model_test import Network
 from multi_read_data import MemoryFriendlyLoader
 
-parser = argparse.ArgumentParser("ruas")
+parser = argparse.ArgumentParser("sci")
 # parser.add_argument('--data_path', type=str, default='./data',
 parser.add_argument('--data_path', type=str, default=r'C:\Users\ADMIN\Desktop\SCI\LOL\input',
                     help='location of the test data corpus')
