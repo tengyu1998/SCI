@@ -1,4 +1,4 @@
-# Toward Fast, Flexible, and Robust Low-Light Image Enhancement
+# Toward Fast, Flexible, and Robust Low-Light Image Enhancement (Oral)
 ## Requirements
 * python3.7
 * pytorch==1.8.0
