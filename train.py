@@ -141,19 +141,9 @@ def main():
                     input = Variable(input, volatile=True).cuda()
                     image_name = image_name[0].split('\\')[-1].split('.')[0]
                     illu_list, ref_list, input_list, atten= model(input)
-
-
                     u_name = '%s.png' % (image_name + '_' + str(epoch))
                     u_path = image_path + '/' + u_name
                     save_images(ref_list[0], u_path)
-
-                    u_name = '%s.png' % (image_name + '_' + str(epoch) + '_1' )
-                    u_path = image_path + '/' + u_name
-                    save_images(ref_list[1], u_path)
-
-                    u_name = '%s.png' % (image_name + '_' + str(epoch) + '_2' )
-                    u_path = image_path + '/' + u_name
-                    save_images(ref_list[2], u_path)
 
 if __name__ == '__main__':
     main()
