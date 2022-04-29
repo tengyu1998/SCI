@@ -6,5 +6,5 @@
 
 ## Test steps
 * Prepare the data and put it in the specified folder
-* Select specific model
+* Select specific model (difficult.pt medium.pt easy.pt)
 * run "test.py"
