@@ -95,7 +95,7 @@ def main():
     print(MB)
 
 
-    train_low_data_names = r'D:\data\LOL\ALL\input'
+    train_low_data_names = 'Your train dataset'
     TrainDataset = MemoryFriendlyLoader(img_dir=train_low_data_names, task='train')
 
 
