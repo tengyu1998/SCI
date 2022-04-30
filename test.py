@@ -4,19 +4,20 @@ import numpy as np
 import torch
 import argparse
 import torch.utils
+import torch.backends.cudnn as cudnn
 from PIL import Image
 from torch.autograd import Variable
-from model_test import Network
+from model import Finetunemodel
+
 from multi_read_data import MemoryFriendlyLoader
 
-parser = argparse.ArgumentParser("sci")
-# parser.add_argument('--data_path', type=str, default='./data',
-parser.add_argument('--data_path', type=str, default=r'C:\Users\ADMIN\Desktop\SCI\LOL\input',
-                    help='location of the test data corpus')
-parser.add_argument('--save_path', type=str, default=r'C:\Users\ADMIN\Desktop\SCI\Ours\LOL',
-                    help='save location of the data corpus')
-parser.add_argument('--model', type=str, default='./model/demo.pt',
-                    help='save location of the data corpus')
+parser = argparse.ArgumentParser("SCI")
+parser.add_argument('--data_path', type=str, default='./data/medium',
+                    help='location of the data corpus')
+parser.add_argument('--save_path', type=str, default='./results/medium', help='location of the data corpus')
+parser.add_argument('--model', type=str, default='./weights/medium.pt', help='location of the data corpus')
+parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
+parser.add_argument('--seed', type=int, default=2, help='random seed')
 
 args = parser.parse_args()
 save_path = args.save_path
@@ -41,23 +42,19 @@ def main():
         print('no gpu device available')
         sys.exit(1)
 
-    model = Network()
+    model = Finetunemodel(args.model)
     model = model.cuda()
-    model_dict = torch.load(args.model, map_location='cuda:0')
-    model.load_state_dict(model_dict)
 
     model.eval()
     with torch.no_grad():
         for _, (input, image_name) in enumerate(test_queue):
             input = Variable(input, volatile=True).cuda()
             image_name = image_name[0].split('\\')[-1].split('.')[0]
-            enhance = model(input)
-
-            u_name = '%s.png' % (image_name + '_enhance')
-            u_path = save_path + '/' + u_name
+            i, r = model(input)
+            u_name = '%s.png' % (image_name)
             print('processing {}'.format(u_name))
-            save_images(enhance, u_path)
-
+            u_path = save_path + '/' + u_name
+            save_images(r, u_path)
 
 
 
