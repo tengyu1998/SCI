@@ -32,7 +32,7 @@ class SmoothLoss(nn.Module):
     # output: output      input:input
     def forward(self, input, output):
         self.output = output
-        self.input = self.rgb2yCbCr(input)
+#         self.input = self.rgb2yCbCr(input)
         self.input = input
         sigma_color = -1.0 / 2 * self.sigma * self.sigma
         w1 = torch.exp(torch.sum(torch.pow(self.input[:, :, 1:, :] - self.input[:, :, :-1, :], 2), dim=1,
