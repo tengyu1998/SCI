@@ -112,8 +112,8 @@ def main():
 
     total_step = 0
 
-    model.train()
     for epoch in range(args.epochs):
+        model.train()
         losses = []
         for batch_idx, (input, _) in enumerate(train_queue):
             total_step += 1
