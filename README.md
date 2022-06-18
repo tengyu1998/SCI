@@ -21,6 +21,7 @@
 * run "test.py"
 
 ## Results on Low-light Image Enhancement
-* Prepare the data and put it in the specified folder
-* Select specific model (difficult.pt medium.pt easy.pt)
-* run "test.py"
+<img src="Figs/LLIE_1.png" width="900px"/> 
+<img src="Figs/LLIE_2.png" width="900px"/> 
+<img src="Figs/LLIE_3.png" width="900px"/> 
+<img src="Figs/LLIE_4.png" width="900px"/> 
