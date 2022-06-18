@@ -25,3 +25,8 @@
 <img src="Figs/LLIE_2.png" width="900px"/> 
 <img src="Figs/LLIE_3.png" width="900px"/> 
 <img src="Figs/LLIE_4.png" width="900px"/> 
+
+## Results on High-level Vision Tasks
+<img src="Figs/Det_1.png" width="900px"/> 
+<img src="Figs/Seg_1.png" width="900px"/> 
+<img src="Figs/Seg_2.png" width="900px"/> 
