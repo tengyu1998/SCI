@@ -31,11 +31,13 @@
 <img src="Figs/Seg_1.png" width="900px"/> 
 <img src="Figs/Seg_2.png" width="900px"/> 
 
+## Citation
 ```bibtex
-@article{zhang2022practical,
-title={Practical Blind Denoising via Swin-Conv-UNet and Data Synthesis},
-author={Zhang, Kai and Li, Yawei and Liang, Jingyun and Cao, Jiezhang and Zhang, Yulun and Tang, Hao and Timofte, Radu and Van Gool, Luc},
-journal={arXiv preprint},
-year={2022}
+@inproceedings{ma2022toward,
+  title={Toward Fast, Flexible, and Robust Low-Light Image Enhancement},
+  author={Ma, Long and Ma, Tengyu and Liu, Risheng and Fan, Xin and Luo, Zhongxuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5637--5646},
+  year={2022}
 }
 ```
