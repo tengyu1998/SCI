@@ -28,6 +28,7 @@
 ## Results on High-level Vision Tasks
 ### Dark Face Detection
 <img src="Figs/Det_1.png" width="900px"/> 
+
 ### Nighttime Semantic Segmentation
 <img src="Figs/Seg_1.png" width="900px"/> 
 
