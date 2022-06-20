@@ -23,7 +23,6 @@
 
 ## Results on Low-light Image Enhancement
 <img src="Figs/LLIE_1.png" width="900px"/> 
-<img src="Figs/LLIE_2.png" width="900px"/> 
 <img src="Figs/LLIE_3.png" width="900px"/> 
 
 ## Results on High-level Vision Tasks
