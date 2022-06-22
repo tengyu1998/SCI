@@ -18,9 +18,9 @@
 
 ### introduce models
 Under the weights folder, there are three different models, the main difference is that the training data is different
-*easy.pt mainly uses the MIT dataset for training
-*medium.pt mainly uses the LOL and LSRW datasets for training
-*difficult.pt mainly uses the darkface dataset for training
+* easy.pt mainly uses the MIT dataset for training
+* medium.pt mainly uses the LOL and LSRW datasets for training
+* difficult.pt mainly uses the darkface dataset for training
 If you want to retrain a new model, you can write the path of the dataset to train.py, the final model will be saved to the weights folder, and the intermediate visualization results will be saved to the results folder
 
 ### Test steps
