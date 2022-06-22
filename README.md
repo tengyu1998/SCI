@@ -16,9 +16,16 @@
 * pytorch==1.8.0
 * cuda11.1
 
+### introduce models
+Under the weights folder, there are three different models, the main difference is that the training data is different
+*easy.pt mainly uses the MIT dataset for training
+*medium.pt mainly uses the LOL and LSRW datasets for training
+*difficult.pt mainly uses the darkface dataset for training
+If you want to retrain a new model, you can write the path of the dataset to train.py, the final model will be saved to the weights folder, and the intermediate visualization results will be saved to the results folder
+
 ### Test steps
 * Prepare the data and put it in the specified folder
-* Select specific model (difficult.pt medium.pt easy.pt)
+* Choose a specific model as needed (difficult.pt medium.pt easy.pt)
 * run "test.py"
 
 ## Results on Low-light Image Enhancement
