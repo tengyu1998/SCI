@@ -16,7 +16,7 @@
 * pytorch==1.8.0
 * cuda11.1
 
-### introduce models
+### Introduce the trained model
 Under the weights folder, there are three different models, the main difference is that the training data is different
 * easy.pt mainly uses the MIT dataset for training
 * medium.pt mainly uses the LOL and LSRW datasets for training
