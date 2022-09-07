@@ -20,7 +20,7 @@ The RAW2RGB converted process follows the manner from the official website(https
 
 [[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]dataset include 600 images, 500 image pairs for training and 100 image pairs for testing.
 
-[[LSRW](https://drive.google.com/file/d/1X1uuH5gqmGua2AnN4BsC8YI-H7mJ1Dji/view?usp=sharing)]dataset include 550 image pairs, 500 image pairs for training and 50 image pairs for testing.
+[[LSRW](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]dataset include 550 image pairs, 500 image pairs for training and 50 image pairs for testing.
 
 ### Introduce the trained model
 Under the weights folder, there are three different models, the main difference is that the training data is different
