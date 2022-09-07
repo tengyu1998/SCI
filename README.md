@@ -16,7 +16,7 @@
 * pytorch==1.8.0
 * cuda11.1
 ### Datasets
-The RAW2RGB converted process follows the manner from the official website(https://github.com/JianghaiSCU/R2RNet)
+The RAW2RGB converted process follows the manner from the official website(https://data.csail.mit.edu/graphics/fivek/).
 
 [[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]dataset include 600 images, 500 image pairs for training and 100 image pairs for testing.
 
