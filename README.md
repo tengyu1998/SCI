@@ -24,8 +24,8 @@ The RAW2RGB converted process follows the manner from the official website(https
 
 ### Introduce the trained model
 Under the weights folder, there are three different models, the main difference is that the training data is different
-* easy.pt mainly uses the MIT dataset for training
-* medium.pt mainly uses the LOL and LSRW datasets for training
+* easy.pt mainly uses the MIT(https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing) dataset for training
+* medium.pt mainly uses the LOL and LSRW (https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)datasets for training
 * difficult.pt mainly uses the darkface dataset for training
 
 If you want to retrain a new model, you can write the path of the dataset to train.py and run "train.py", the final model will be saved to the weights folder, and the intermediate visualization results will be saved to the results folder
