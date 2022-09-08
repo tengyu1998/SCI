@@ -15,14 +15,14 @@
 * python3.7
 * pytorch==1.8.0
 * cuda11.1
-### Datasets
-The RAW2RGB converted process follows the manner from the official website(https://data.csail.mit.edu/graphics/fivek/).
+### Dataset used in the paper
 
-[[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]dataset include 600 images, 500 image pairs for training and 100 image pairs for testing. The original datasets come from: https://data.csail.mit.edu/graphics/fivek/.
+
+[[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]dataset include 600 images, 500 image pairs for training and 100 image pairs for testing. The RAW2RGB converted process follows the manner from the official website(https://data.csail.mit.edu/graphics/fivek/)..
 
 [[LSRW](https://drive.google.com/file/d/1feX1yZwRtKv3kJwpGyBT1CtOjH9rrTg2/view?usp=sharing)]dataset include 550 image pairs, 500 image pairs for training and 50 image pairs for testing. The original datasets come from:https://drive.google.com/file/d/1X1uuH5gqmGua2AnN4BsC8YI-H7mJ1Dji/view?usp=sharing
 
-Note that the images used in the paper are from both datasets.
+Note that the image used in the paper are from both datasets.
 ### Introduce the trained model
 Under the weights folder, there are three different models, the main difference is that the training data is different
 * easy.pt mainly uses the MIT dataset for training
