@@ -18,20 +18,21 @@
 ### Dataset used in the paper
 
 
-[[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]: This paper randomly selected 600 no-reference images and 500 image pairs from the MIT dataset for training and 100 image pairs for testing. Details about the RAW2RGB conversion process and the complete MIT dataset information could be obtained from [the official website](https://data.csail.mit.edu/graphics/fivek/).
+[[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]: This paper randomly selected 500 image pairs and 100 image pairs from the MIT dataset for training and testing, respetively. Details about the RAW2RGB conversion process and the complete MIT dataset information could be obtained from [the official website](https://data.csail.mit.edu/graphics/fivek/).
 
-[[LSRW](https://drive.google.com/file/d/1feX1yZwRtKv3kJwpGyBT1CtOjH9rrTg2/view?usp=sharing)]dataset include 550 image pairs, 500 image pairs for training and 50 image pairs for testing. The original datasets come from:https://drive.google.com/file/d/1X1uuH5gqmGua2AnN4BsC8YI-H7mJ1Dji/view?usp=sharing
+[[LSRW](https://drive.google.com/file/d/1feX1yZwRtKv3kJwpGyBT1CtOjH9rrTg2/view?usp=sharing)]: This paper randomly selected 500 image pairs and 50 image pairs from the LSRW dataset for training and testing, respetively. The complete LSRW dataset information could be obtained from [the official website](https://drive.google.com/file/d/1X1uuH5gqmGua2AnN4BsC8YI-H7mJ1Dji/view?usp=sharing).
 
 Note that the provided model in this code are not the model for generating results reported in the paper.
 ### Introduce the trained model
-Under the weights folder, there are three different models, the main difference is that the training data is different
+Under the weights folder, there are three different models. Note that, unlike the results presented in the paper, these three models were trained on low-light scenes of three different levels of difficulty (i.e. easy, medium and difficult). The difficulty level of low-light scenes is subjectively classified by our researchers. The proposed models trained on low-light scenes of different difficulty aim to make the method proposed in this paper better serve more general scenes. (If you want to reproduce the results shown in the paper, you could retrain the model following the configuration provided in the previous section.)
+The training configurations of the above three models are as follows:
 * easy.pt mainly uses the MIT dataset for training
 * medium.pt mainly uses the LOL and LSRW datasets for training
 * difficult.pt mainly uses the DARKFACE dataset for training
 
 If you want to retrain a new model, you can write the path of the dataset to train.py and run "train.py", the final model will be saved to the weights folder, and the intermediate visualization results will be saved to the results folder
 
-### Test steps
+### Testing
 * Prepare the data and put it in the specified folder
 * Choose a specific model as needed (difficult.pt medium.pt easy.pt)
 * run "test.py"
