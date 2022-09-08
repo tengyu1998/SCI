@@ -22,7 +22,7 @@
 
 [[LSRW](https://drive.google.com/file/d/1feX1yZwRtKv3kJwpGyBT1CtOjH9rrTg2/view?usp=sharing)]dataset include 550 image pairs, 500 image pairs for training and 50 image pairs for testing. The original datasets come from:https://drive.google.com/file/d/1X1uuH5gqmGua2AnN4BsC8YI-H7mJ1Dji/view?usp=sharing
 
-Note that the image used in the paper are from both datasets.
+Note that the provided model in this code are not the model for generating results reported in the paper.
 ### Introduce the trained model
 Under the weights folder, there are three different models, the main difference is that the training data is different
 * easy.pt mainly uses the MIT dataset for training
