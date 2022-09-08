@@ -25,6 +25,7 @@
 Note that the provided model in this code are not the model for generating results reported in the paper.
 ### Introduce the trained model
 Under the weights folder, there are three different models. Note that, unlike the results presented in the paper, these three models were trained on low-light scenes of three different levels of difficulty (i.e. easy, medium and difficult). The difficulty level of low-light scenes is subjectively classified by our researchers. The proposed models trained on low-light scenes of different difficulty aim to make the method proposed in this paper better serve more general scenes. (If you want to reproduce the results shown in the paper, you could retrain the model following the configuration provided in the previous section.)
+
 The training configurations of the above three models are as follows:
 * easy.pt mainly uses the MIT dataset for training
 * medium.pt mainly uses the LOL and LSRW datasets for training
