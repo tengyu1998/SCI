@@ -35,7 +35,7 @@ If you want to retrain a new model, you can write the path of the dataset to tra
 
 ### Testing
 * Prepare the data and put it in the specified folder
-* Choose a specific model as needed (difficult.pt medium.pt easy.pt)
+* Choose a specific model as needed (difficult.pt, medium.pt or easy.pt)
 * run "test.py"
 
 ## Results on Low-light Image Enhancement
