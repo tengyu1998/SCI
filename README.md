@@ -18,7 +18,7 @@
 ### Dataset used in the paper
 
 
-[[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]dataset include 600 images, 500 image pairs for training and 100 image pairs for testing. The RAW2RGB converted process follows the manner from the official website(https://data.csail.mit.edu/graphics/fivek/)..
+[[MIT](https://drive.google.com/file/d/1KKB0ruBN12-vr-4upz8ZXKTsE3yHnt2V/view?usp=sharing)]: This paper randomly selected 600 no-reference images and 500 image pairs from the MIT dataset for training and 100 image pairs for testing. Details about the RAW2RGB conversion process and the complete MIT dataset information could be obtained from [the official website](https://data.csail.mit.edu/graphics/fivek/).
 
 [[LSRW](https://drive.google.com/file/d/1feX1yZwRtKv3kJwpGyBT1CtOjH9rrTg2/view?usp=sharing)]dataset include 550 image pairs, 500 image pairs for training and 50 image pairs for testing. The original datasets come from:https://drive.google.com/file/d/1X1uuH5gqmGua2AnN4BsC8YI-H7mJ1Dji/view?usp=sharing
 
